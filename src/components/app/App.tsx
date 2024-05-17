@@ -1,13 +1,29 @@
 import clsx from 'clsx';
 import { CSSProperties, useState } from 'react';
-import { defaultArticleState } from 'src/constants/articleProps';
+import { OptionType, defaultArticleState } from 'src/constants/articleProps';
 import styles from '../../styles/index.module.scss';
 import '../../styles/index.scss';
 import { ArticleParamsForm } from '../article-params-form';
 import { Article } from '../article';
 
+export type articleType = {
+	fontFamilyOption: OptionType;
+	fontColor: OptionType;
+	backgroundColor: OptionType;
+	contentWidth: OptionType;
+	fontSizeOption: OptionType;
+};
+
+export const defaultArticleFormState: articleType = {
+	fontFamilyOption: defaultArticleState.fontFamilyOption,
+	fontSizeOption: defaultArticleState.fontSizeOption,
+	fontColor: defaultArticleState.fontColor,
+	backgroundColor: defaultArticleState.backgroundColor,
+	contentWidth: defaultArticleState.contentWidth,
+};
+
 export const App = () => {
-	const [article, setArticle] = useState(defaultArticleState);
+	const [article, setArticle] = useState<articleType>(defaultArticleFormState);
 
 	return (
 		<div
