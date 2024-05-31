@@ -1,0 +1,133 @@
+.transport_main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom: 100px;
+	gap: 60px;
+	position: relative;
+	z-index: -1;
+	background-color: #b4e4e6;
+}
+
+.transport_main h1 {
+	white-space: nowrap; /* предотвращает перенос текста */
+	font-family: 'Franklin Gothic Demi';
+	color: #0d6032;
+	font-size: 28px;
+	width: 60%;
+	margin: auto;
+}
+
+.transport_decor_left {
+	max-height: 300px;
+	position: absolute;
+	right: 100px;
+	bottom: 0;
+	z-index: -5;
+}
+
+.transport_decor_right {
+	max-height: 300px;
+	position: absolute;
+	left: 100px;
+	top: 0;
+	z-index: -5;
+}
+
+.transport_block {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	margin: auto;
+	gap: 75px;
+	//max-width: 1100px;
+}
+
+.transport_content_block {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: white;
+	border-radius: 25px;
+	padding: 40px;
+	width: 60%;
+	//max-height: 600px;
+}
+
+.transport_content_block_title {
+	display: flex;
+	gap: 28px;
+	align-items: center;
+}
+
+.transport_content_block p {
+	color: black;
+	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+	font-family: 'Franklin Gothic Book';
+}
+
+.transport_content_block_title p {
+	font-family: 'Franklin Gothic Medium Cond';
+	font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
+	color: #0d6032;
+}
+
+.transport_content_block_img {
+	max-height: 70px;
+}
+
+@media (max-width: 1024px) {
+	.transport_block {
+		width: 80%;
+		gap: 40px;
+	}
+	.transport_main h1 {
+		width: 80%;
+	}
+	.transport_decor_left {
+		max-height: 250px;
+
+		right: 50px;
+	}
+
+	.transport_decor_right {
+		max-height: 250px;
+		left: 50px;
+	}
+	.transport_content_block_img {
+		max-height: 60px;
+	}
+	.transport_content_block_title {
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.transport_block {
+		flex-direction: column;
+		align-items: center;
+		width: 95%;
+		gap: 40px;
+	}
+	.transport_main h1 {
+		width: 95%;
+	}
+	.transport_content_block_img {
+		max-height: 50px;
+	}
+	.transport_content_block_title {
+		gap: 10px;
+	}
+
+	.transport_decor_left {
+		max-height: 200px;
+
+		right: 25px;
+	}
+
+	.transport_decor_right {
+		max-height: 200px;
+		left: 25px;
+	}
+}

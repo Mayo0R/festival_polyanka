@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 200">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#_Безымянный_градиент_4);
+        mix-blend-mode: hard-light;
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_4" data-name="Безымянный градиент 4" x1="0" y1="100" x2="1920" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b4e4e6"/>
+      <stop offset=".1" stop-color="#b8e5e7"/>
+      <stop offset=".21" stop-color="#c5eaeb"/>
+      <stop offset=".32" stop-color="#daf1f2"/>
+      <stop offset=".44" stop-color="#f7fcfc"/>
+      <stop offset=".46" stop-color="#fff"/>
+      <stop offset=".51" stop-color="#f5fbfb"/>
+      <stop offset=".72" stop-color="#d2eef0"/>
+      <stop offset=".89" stop-color="#bce6e8"/>
+      <stop offset="1" stop-color="#b4e4e6"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="_Слой_2" data-name="Слой 2">
+      <g id="_Слой_1-2" data-name="Слой 1">
+        <rect class="cls-2" width="1920" height="200"/>
+      </g>
+    </g>
+  </g>
+</svg>

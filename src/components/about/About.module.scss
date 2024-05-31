@@ -1,0 +1,63 @@
+.about_main {
+	display: flex;
+	width: 60%;
+	align-items: flex-start;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	gap: 90px;
+	position: relative;
+	z-index: -1;
+}
+
+.about_main h1 {
+	white-space: nowrap; /* предотвращает перенос текста */
+	font-family: 'Franklin Gothic Demi';
+	color: #0d6032;
+	font-size: 28px;
+}
+
+.about_text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: black;
+	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+	font-family: 'Franklin Gothic Book';
+
+	padding-left: 20px; /* Отступ текста от полоски */
+	position: relative;
+}
+
+.about_text:before {
+	content: ' ';
+	background: #b4e4e6;
+	width: 10px; /* Толщина полоски */
+	height: 98%; /* Высота полоски */
+	position: absolute;
+	left: 0; /* Позиционируем полоску слева */
+	top: 50%; /* Полоска начинается посередине блока */
+	transform: translateY(
+		-50%
+	); /* Сдвигаем полоску вверх на половину её высоты */
+}
+
+@media (max-width: 1024px) {
+	.about_main {
+		width: 80%;
+
+		padding-top: 60px;
+		padding-bottom: 60px;
+		gap: 55px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.about_main {
+		flex-direction: column;
+		width: 95%;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		gap: 40px;
+	}
+}
